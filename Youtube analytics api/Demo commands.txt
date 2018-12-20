@@ -1,0 +1,19 @@
+
+1)Channel report using metrics views and dimentions video
+py yt_analytics_report.py  --channel_id UCOKD-1B_MV84WQMuS3Zajcg --start-date 2018-02-01 --end-date 2018-04-30 --dimensions video --metrics views
+
+2) To show the top 10 most viewed videos:
+py yt_analytics_report.py  --channel_id UCOKD-1B_MV84WQMuS3Zajcg --start-date 2018-02-01 --end-date 2018-04-30 --dimensions video --metrics estimatedMinutesWatched,views,likes --max-results 10
+
+3) Channel report using metrics views and dimentions country
+:Here the output will be based on the views in each countries
+py yt_analytics_report.py  --channel_id UCOKD-1B_MV84WQMuS3Zajcg --start-date 2018-02-01 --end-date 2018-04-30 --dimensions country --metrics views
+
+4) Video Report: Total view counts, estimated watch time, and more for a channel
+py yt_analytics_report.py  --channel_id UCOKD-1B_MV84WQMuS3Zajcg --start-date 2018-02-01 --end-date 2018-04-30 --metrics views,comments,likes,dislikes,estimatedMinutesWatched,averageViewDuration
+
+5) Video Report: Country-specific view counts (and more) for a channel
+py yt_analytics_report.py  --channel_id UCOKD-1B_MV84WQMuS3Zajcg --start-date 2018-02-01 --end-date 2018-04-30 --metrics views,comments,likes,dislikes,estimatedMinutesWatched --filters country==US 
+
+
+
